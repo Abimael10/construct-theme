@@ -1,0 +1,13 @@
+# The published .vsix ships ONLY what an end user needs: the generated themes,
+# the icon, and the docs the Marketplace renders. Everything that builds or
+# documents the project stays in the repo.
+src/**
+.github/**
+images/**
+jsconfig.json
+.editorconfig
+.gitignore
+.vscode/**
+CONTRIBUTING.md
+PUBLISHING.md
+**/*.map

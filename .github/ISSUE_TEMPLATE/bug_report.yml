@@ -1,0 +1,43 @@
+name: Bug report
+description: A colour reads wrong, an element is unstyled, or a variant looks off.
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: variant
+    attributes:
+      label: Variant
+      description: Which Construct theme is selected?
+      options:
+        - Midnight Aqua
+        - Void Aqua
+        - Twilight Aqua
+        - Daybreak Aqua
+        - Midnight Orchid
+        - Void Synth
+        - Twilight Acid
+        - Daybreak Synth
+        - Other / not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What looks wrong
+      description: The element or token, what you see, and what you expected.
+      placeholder: e.g. "JSON property keys are nearly invisible in Daybreak Aqua."
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Screenshot or minimal snippet
+      description: A screenshot, plus the language and a few lines that reproduce it.
+    validations:
+      required: false
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: VS Code 1.9x.x · macOS / Windows / Linux · extension version
+    validations:
+      required: true

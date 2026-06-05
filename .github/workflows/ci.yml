@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Verify, audit & package
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Zero runtime dependencies — `npm ci` still validates the lockfile.
+      - name: Install
+        run: npm ci
+
+      # The themes and manifest are generated. Fail if a commit hand-edited an
+      # artifact or forgot to rebuild after a design-system change.
+      - name: Check generated artifacts are in sync
+        run: npm run check
+
+      # The "low-contrast, easy on the eyes" claim is enforced, not assumed.
+      - name: Ergonomic contrast audit
+        run: npm run audit
+
+      # Smoke-test that the extension actually packages cleanly.
+      - name: Package (smoke test)
+        run: npx --yes @vscode/vsce package --no-dependencies --out construct-theme.vsix
+
+      - name: Upload VSIX artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: construct-theme-vsix
+          path: construct-theme.vsix
+          if-no-files-found: error

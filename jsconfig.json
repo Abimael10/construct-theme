@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "checkJs": true,
+    "strict": true,
+    "noEmit": true,
+    "lib": ["ES2022"]
+  },
+  "include": ["src/**/*.mjs"],
+  "exclude": ["node_modules", "themes"]
+}

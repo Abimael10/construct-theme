@@ -1,0 +1,91 @@
+{
+  "name": "construct-theme",
+  "displayName": "The Construct — Calm Cyberpunk",
+  "description": "A meticulously calibrated, low-contrast cyberpunk theme family engineered for deep work and ocular ergonomics.",
+  "version": "1.0.0",
+  "publisher": "abimael10",
+  "license": "MIT",
+  "author": {
+    "name": "Juan Abimael Santos Castillo"
+  },
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abimael10/construct-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abimael10/construct-theme/issues"
+  },
+  "homepage": "https://github.com/abimael10/construct-theme#readme",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "cyberpunk",
+    "theme",
+    "dark",
+    "light",
+    "low-contrast",
+    "ergonomic",
+    "eye-strain"
+  ],
+  "galleryBanner": {
+    "color": "#11141d",
+    "theme": "dark"
+  },
+  "scripts": {
+    "build": "node src/build.mjs",
+    "check": "node src/build.mjs --check",
+    "audit": "node src/audit.mjs",
+    "icon": "node src/icon.mjs",
+    "preview": "node src/preview.mjs",
+    "vscode:prepublish": "npm run build && npm run icon"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Construct Midnight Aqua",
+        "uiTheme": "vs-dark",
+        "path": "./themes/construct-midnight-aqua.json"
+      },
+      {
+        "label": "Construct Void Aqua",
+        "uiTheme": "vs-dark",
+        "path": "./themes/construct-void-aqua.json"
+      },
+      {
+        "label": "Construct Twilight Aqua",
+        "uiTheme": "vs-dark",
+        "path": "./themes/construct-twilight-aqua.json"
+      },
+      {
+        "label": "Construct Daybreak Aqua",
+        "uiTheme": "vs",
+        "path": "./themes/construct-daybreak-aqua.json"
+      },
+      {
+        "label": "Construct Midnight Orchid",
+        "uiTheme": "vs-dark",
+        "path": "./themes/construct-midnight-orchid.json"
+      },
+      {
+        "label": "Construct Void Synth",
+        "uiTheme": "vs-dark",
+        "path": "./themes/construct-void-synth.json"
+      },
+      {
+        "label": "Construct Twilight Acid",
+        "uiTheme": "vs-dark",
+        "path": "./themes/construct-twilight-acid.json"
+      },
+      {
+        "label": "Construct Daybreak Synth",
+        "uiTheme": "vs",
+        "path": "./themes/construct-daybreak-synth.json"
+      }
+    ]
+  }
+}
