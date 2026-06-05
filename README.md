@@ -1,9 +1,7 @@
 # The Construct — Calm Cyberpunk
 
-[![Marketplace](https://img.shields.io/visual-studio-marketplace/v/abimael10.construct-theme?label=Marketplace&logo=visualstudiocode&color=11141d)](https://marketplace.visualstudio.com/items?itemName=abimael10.construct-theme)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/abimael10.construct-theme?color=11141d)](https://marketplace.visualstudio.com/items?itemName=abimael10.construct-theme)
-[![Open VSX](https://img.shields.io/open-vsx/v/abimael10/construct-theme?label=Open%20VSX&color=11141d)](https://open-vsx.org/extension/abimael10/construct-theme)
-[![License: MIT](https://img.shields.io/badge/License-MIT-11141d.svg)](./LICENSE)
+[![VS Marketplace](https://img.shields.io/badge/VS_Marketplace-Construct-11141d?logo=visualstudiocode&logoColor=7ed2dd)](https://marketplace.visualstudio.com/items?itemName=abimael10.construct-theme)
+[![License: MIT](https://img.shields.io/badge/License-MIT-11141d)](./LICENSE)
 
 A meticulously calibrated, **low-contrast cyberpunk** theme family for Visual
 Studio Code, engineered for high-intensity deep work and ocular ergonomics.
