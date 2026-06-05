@@ -74,7 +74,7 @@ to publish if the tag and `package.json` version disagree.
 npm version 1.0.1 --no-git-tag-version   # bump; update CHANGELOG.md to match
 git commit -am "release: v1.0.1"
 git tag -a v1.0.1 -m "v1.0.1"
-git push origin main --follow-tags       # CI/release workflow takes it from here
+git push origin master --follow-tags     # CI/release workflow takes it from here
 ```
 
 Before the first release, add the gallery screenshots (see

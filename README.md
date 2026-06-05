@@ -10,7 +10,7 @@ A meticulously calibrated, **low-contrast cyberpunk** theme family for Visual
 Studio Code, engineered for high-intensity deep work and ocular ergonomics.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/abimael10/construct-theme/main/images/midnight-aqua.png" alt="Construct Midnight Aqua" width="820">
+  <img src="https://raw.githubusercontent.com/abimael10/construct-theme/master/images/midnight-aqua.png" alt="Construct Midnight Aqua" width="820">
 </p>
 
 ## Install
@@ -74,15 +74,15 @@ accent, so you can see both the depth shift and the accent-wash side by side.
 
 | Midnight Aqua | Midnight Orchid |
 | --- | --- |
-| ![Construct Midnight Aqua](https://raw.githubusercontent.com/abimael10/construct-theme/main/images/midnight-aqua.png) | ![Construct Midnight Orchid](https://raw.githubusercontent.com/abimael10/construct-theme/main/images/midnight-orchid.png) |
+| ![Construct Midnight Aqua](https://raw.githubusercontent.com/abimael10/construct-theme/master/images/midnight-aqua.png) | ![Construct Midnight Orchid](https://raw.githubusercontent.com/abimael10/construct-theme/master/images/midnight-orchid.png) |
 
 | Void Aqua | Void Synth |
 | --- | --- |
-| ![Construct Void Aqua](https://raw.githubusercontent.com/abimael10/construct-theme/main/images/void-aqua.png) | ![Construct Void Synth](https://raw.githubusercontent.com/abimael10/construct-theme/main/images/void-synth.png) |
+| ![Construct Void Aqua](https://raw.githubusercontent.com/abimael10/construct-theme/master/images/void-aqua.png) | ![Construct Void Synth](https://raw.githubusercontent.com/abimael10/construct-theme/master/images/void-synth.png) |
 
 | Twilight Aqua | Twilight Acid |
 | --- | --- |
-| ![Construct Twilight Aqua](https://raw.githubusercontent.com/abimael10/construct-theme/main/images/twilight-aqua.png) | ![Construct Twilight Acid](https://raw.githubusercontent.com/abimael10/construct-theme/main/images/twilight-acid.png) |
+| ![Construct Twilight Aqua](https://raw.githubusercontent.com/abimael10/construct-theme/master/images/twilight-aqua.png) | ![Construct Twilight Acid](https://raw.githubusercontent.com/abimael10/construct-theme/master/images/twilight-acid.png) |
 
 ---
 
