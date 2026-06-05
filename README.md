@@ -3,7 +3,6 @@
 [![Marketplace](https://img.shields.io/visual-studio-marketplace/v/abimael10.construct-theme?label=Marketplace&logo=visualstudiocode&color=11141d)](https://marketplace.visualstudio.com/items?itemName=abimael10.construct-theme)
 [![Installs](https://img.shields.io/visual-studio-marketplace/i/abimael10.construct-theme?color=11141d)](https://marketplace.visualstudio.com/items?itemName=abimael10.construct-theme)
 [![Open VSX](https://img.shields.io/open-vsx/v/abimael10/construct-theme?label=Open%20VSX&color=11141d)](https://open-vsx.org/extension/abimael10/construct-theme)
-[![CI](https://github.com/abimael10/construct-theme/actions/workflows/ci.yml/badge.svg)](https://github.com/abimael10/construct-theme/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-11141d.svg)](./LICENSE)
 
 A meticulously calibrated, **low-contrast cyberpunk** theme family for Visual
@@ -154,7 +153,7 @@ Zero runtime dependencies — just Node ≥ 18.
 
 ```bash
 npm run build      # compile all variants → themes/, sync the manifest, run the audit
-npm run check      # CI-friendly: fail if generated files are stale
+npm run check      # verify generated files are in sync (fails if stale)
 npm run audit      # run the ergonomic contrast audit on its own
 npm run preview    # render palette swatches in the terminal
 ```

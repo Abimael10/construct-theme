@@ -53,28 +53,38 @@ Commit the regenerated `themes/` and `package.json` alongside your source edit.
 
 ## Releasing
 
-Releases are **tag-driven**: pushing a `v*.*.*` tag triggers
-`.github/workflows/release.yml`, which packages the extension and publishes it
-to the VS Marketplace + Open VSX and cuts a GitHub Release. The workflow refuses
-to publish if the tag and `package.json` version disagree.
+Everything runs **locally** — no CI, no GitHub Actions, no paid features. The
+local gates (`check`, `audit`) are the same verification a CI pipeline would do.
 
-**One-time setup** (credentials live only as GitHub Actions secrets, never in the repo):
+**One-time token setup** (used locally; nothing is stored in the repo):
 
 - **Marketplace** — create an Azure DevOps org, then publisher `abimael10` at
   <https://marketplace.visualstudio.com/manage>. Generate a PAT with
   **Organization: All accessible organizations** and scope **Marketplace → Manage**.
-  Save it as the `VSCE_PAT` repo secret.
-- **Open VSX** — sign in at <https://open-vsx.org>, accept the agreement, run
-  `npx ovsx create-namespace abimael10 --pat <token>`, then save a token as the
-  `OVSX_PAT` repo secret.
+  Authenticate once with `npx @vscode/vsce login abimael10`.
+- **Open VSX** (optional, for VSCodium/Cursor) — sign in at <https://open-vsx.org>,
+  accept the agreement, run `npx ovsx create-namespace abimael10 --pat <token>`.
 
 **Cutting a release:**
 
 ```bash
-npm version 1.0.1 --no-git-tag-version   # bump; update CHANGELOG.md to match
+# 1. Bump version (then update CHANGELOG.md to match)
+npm version 1.0.1 --no-git-tag-version
+
+# 2. Verify locally — the gates that matter
+npm run check          # generated themes/manifest are in sync
+npm run audit          # palette stays within the comfort envelope
+
+# 3. Publish (vscode:prepublish rebuilds themes + icon first)
+npx @vscode/vsce publish
+npx ovsx publish --pat <token>          # optional: Open VSX
+
+# 4. Record the release in git (and, optionally, on GitHub — both free)
 git commit -am "release: v1.0.1"
 git tag -a v1.0.1 -m "v1.0.1"
-git push origin master --follow-tags     # CI/release workflow takes it from here
+git push origin master --follow-tags
+npx @vscode/vsce package                # produces the .vsix
+gh release create v1.0.1 *.vsix --generate-notes   # optional, needs gh CLI only
 ```
 
 Before the first release, add the gallery screenshots (see
