@@ -69,13 +69,20 @@ Eight variants ship by default; all sixteen combinations are one edit away (see
 
 ## Gallery
 
+Each row pairs a canvas depth with its **Aqua** reference and an alternate
+accent, so you can see both the depth shift and the accent-wash side by side.
+
 | Midnight Aqua | Midnight Orchid |
 | --- | --- |
-| ![](https://raw.githubusercontent.com/abimael10/construct-theme/main/images/midnight-aqua.png) | ![](https://raw.githubusercontent.com/abimael10/construct-theme/main/images/midnight-orchid.png) |
+| ![Construct Midnight Aqua](https://raw.githubusercontent.com/abimael10/construct-theme/main/images/midnight-aqua.png) | ![Construct Midnight Orchid](https://raw.githubusercontent.com/abimael10/construct-theme/main/images/midnight-orchid.png) |
 
-| Twilight Acid | Daybreak Aqua |
+| Void Aqua | Void Synth |
 | --- | --- |
-| ![](https://raw.githubusercontent.com/abimael10/construct-theme/main/images/twilight-acid.png) | ![](https://raw.githubusercontent.com/abimael10/construct-theme/main/images/daybreak-aqua.png) |
+| ![Construct Void Aqua](https://raw.githubusercontent.com/abimael10/construct-theme/main/images/void-aqua.png) | ![Construct Void Synth](https://raw.githubusercontent.com/abimael10/construct-theme/main/images/void-synth.png) |
+
+| Twilight Aqua | Twilight Acid |
+| --- | --- |
+| ![Construct Twilight Aqua](https://raw.githubusercontent.com/abimael10/construct-theme/main/images/twilight-aqua.png) | ![Construct Twilight Acid](https://raw.githubusercontent.com/abimael10/construct-theme/main/images/twilight-acid.png) |
 
 ---
 

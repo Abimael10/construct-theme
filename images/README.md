@@ -17,8 +17,13 @@ types, functions, JSX, strings, numbers, and comments works well).
 | --- | --- | --- |
 | `midnight-aqua.png` | Construct Midnight Aqua | The hero image. Also used at the top of the README. |
 | `midnight-orchid.png` | Construct Midnight Orchid | Shows the accent-wash difference vs. Aqua. |
-| `twilight-acid.png` | Construct Twilight Acid | The low-contrast / alternate-accent showcase. |
-| `daybreak-aqua.png` | Construct Daybreak Aqua | Proves the light variant is first-class. |
+| `void-aqua.png` | Construct Void Aqua | The deepest canvas. |
+| `void-synth.png` | Construct Void Synth | Violet accent on the deep canvas. |
+| `twilight-aqua.png` | Construct Twilight Aqua | The lowest-contrast canvas. |
+| `twilight-acid.png` | Construct Twilight Acid | Mint accent on the soft canvas. |
+
+> Optional but nice: add a `daybreak-aqua.png` (the light variant) to prove
+> Daybreak is first-class, then add a row for it to the README gallery.
 
 ## How to capture cleanly
 
